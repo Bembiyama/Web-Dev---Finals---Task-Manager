@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('pic\ pic.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5851;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff403a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s ease;
+}
+
+li:hover {
+    background-color: #f2f2f2;
+}
+
+li span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+li button:hover {
+    color: #333;
+}
+
+.motivational-quote-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+    transition: opacity 1s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.datetime-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#date, #time {
+    margin: 5px;
+}
+
+.verse-of-the-day-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.verse-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 300px; 
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#verse {
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 3000ms ease-out;
+}
+
+.deadline {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.expired {
+    background-color: red;
+    color: red;
+}
